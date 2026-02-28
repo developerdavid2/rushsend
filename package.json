@@ -1,0 +1,25 @@
+{
+  "name": "rushsend",
+  "private": true,
+  "scripts": {
+    "dev:api": "pnpm --filter api dev",
+    "dev:merchant": "pnpm --filter web-merchant dev",
+    "dev:admin": "pnpm --filter web-admin dev",
+    "dev:mobile": "pnpm --filter mobile start",
+    "build": "turbo build",
+    "lint": "turbo lint"
+  },
+  "devDependencies": {
+    "turbo": "latest",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "~19.1.0"
+    }
+  }
+}
